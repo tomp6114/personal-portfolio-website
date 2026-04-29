@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tom P Varghese — Flutter Developer</title>
+  <meta name="description" content="Tom P Varghese — Flutter Developer & Mobile Application Engineer with 3+ years building scalable Android & iOS apps using Clean Architecture." />
+  <meta name="keywords" content="Flutter Developer, Mobile App Engineer, Android, iOS, Dart, Firebase, Bloc, Clean Architecture" />
+  <link rel="canonical" href="https://tomp6114.github.io/personal/" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo" aria-label="Tom P Varghese — Home">
+        <span class="logo-bracket">{</span>TPV<span class="logo-bracket">}</span>
+      </a>
+      <ul class="nav-links" id="nav-links" role="list">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link nav-cta">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section id="hero" aria-label="Introduction">
+    <canvas id="hero-canvas" aria-hidden="true"></canvas>
+    <div class="hero-content">
+      <div class="hero-badge reveal-item">
+        <span class="mono">Available for Exciting Opportunities</span>
+        <span class="badge-dot" aria-hidden="true"></span>
+      </div>
+      <h1 class="hero-title reveal-item">
+        <span class="hero-name">Tom P Varghese</span>
+        <span class="hero-role">Flutter Developer <span class="primary-accent">|</span> Mobile Application Engineer</span>
+        <span class="hero-platforms mono">(Android &amp; iOS)</span>
+      </h1>
+      <p class="hero-sub reveal-item">
+        3+ years of experience building scalable, high-performance applications
+        with Clean Architecture and intuitive UIs.
+      </p>
+      <div class="hero-cta reveal-item">
+        <a href="#projects" class="btn btn-primary" id="view-projects-btn">View Projects</a>
+        <a href="#" class="btn btn-secondary" id="download-resume-btn" aria-label="Download Resume PDF">Download Resume</a>
+      </div>
+      <div class="hero-scroll-hint reveal-item" aria-hidden="true">
+        <span class="mono">scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section id="about" aria-label="About Me">
+    <div class="container">
+      <div class="section-header reveal-item">
+        <span class="section-label mono">01 / about</span>
+        <h2 class="section-title">About Me</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text reveal-item">
+          <p class="about-lead">
+            I am a Flutter Developer with a proven track record of improving app performance and
+            delivering production-grade features across product and service-based environments.
+          </p>
+          <p class="about-body">
+            I specialize in <strong>Dart</strong>, <strong>REST APIs</strong>, <strong>Firebase</strong>,
+            <strong>Bloc state management</strong>, and <strong>CI/CD pipelines</strong>. My approach
+            blends clean, maintainable code with a sharp eye for user experience — every pixel and
+            every millisecond matters.
+          </p>
+          <div class="about-location">
+            <span class="location-pin" aria-hidden="true">📍</span>
+            <div>
+              <span class="location-primary">Bangalore, India</span>
+              <span class="location-secondary mono">Originally from Kerala</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-stats reveal-item">
+          <div class="stat-card" id="stat-years">
+            <span class="stat-number">3<span class="primary-accent">+</span></span>
+            <span class="stat-label mono">Years Experience</span>
+          </div>
+          <div class="stat-card" id="stat-apps">
+            <span class="stat-number">5<span class="primary-accent">+</span></span>
+            <span class="stat-label mono">Apps Shipped</span>
+          </div>
+          <div class="stat-card" id="stat-perf">
+            <span class="stat-number">50<span class="primary-accent">%</span></span>
+            <span class="stat-label mono">Load Time Reduced</span>
+          </div>
+          <div class="stat-card" id="stat-perf2">
+            <span class="stat-number">40<span class="primary-accent">%</span></span>
+            <span class="stat-label mono">Performance Boost</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SKILLS ========== -->
+  <section id="skills" aria-label="Technical Skills">
+    <div class="container">
+      <div class="section-header reveal-item">
+        <span class="section-label mono">02 / skills</span>
+        <h2 class="section-title">Technical Skills</h2>
+      </div>
+      <div class="skills-grid">
+
+        <div class="skill-category reveal-item" id="skills-lang">
+          <h3 class="skill-cat-title">
+            <span class="skill-cat-icon" aria-hidden="true">⌨</span> Languages
+          </h3>
+          <div class="skill-tags" role="list">
+            <span class="skill-tag" role="listitem">Dart</span>
+            <span class="skill-tag" role="listitem">Java</span>
+            <span class="skill-tag skill-tag--dim" role="listitem">Kotlin <span class="mono tag-note">(basics)</span></span>
+          </div>
+        </div>
+
+        <div class="skill-category reveal-item" id="skills-mobile">
+          <h3 class="skill-cat-title">
+            <span class="skill-cat-icon" aria-hidden="true">📱</span> Mobile &amp; Architecture
+          </h3>
+          <div class="skill-tags" role="list">
+            <span class="skill-tag skill-tag--primary" role="listitem">Flutter</span>
+            <span class="skill-tag" role="listitem">Android Dev</span>
+            <span class="skill-tag" role="listitem">iOS Dev</span>
+            <span class="skill-tag" role="listitem">Bloc</span>
+            <span class="skill-tag" role="listitem">Provider</span>
+            <span class="skill-tag" role="listitem">GetX</span>
+            <span class="skill-tag skill-tag--primary" role="listitem">Clean Architecture</span>
+          </div>
+        </div>
+
+        <div class="skill-category reveal-item" id="skills-db">
+          <h3 class="skill-cat-title">
+            <span class="skill-cat-icon" aria-hidden="true">🗄</span> Databases &amp; Backend
+          </h3>
+          <div class="skill-tags" role="list">
+            <span class="skill-tag" role="listitem">Firebase Auth</span>
+            <span class="skill-tag" role="listitem">Firestore</span>
+            <span class="skill-tag" role="listitem">FCM</span>
+            <span class="skill-tag" role="listitem">Supabase</span>
+            <span class="skill-tag" role="listitem">Hive</span>
+            <span class="skill-tag" role="listitem">SQLite</span>
+          </div>
+        </div>
+
+        <div class="skill-category reveal-item" id="skills-api">
+          <h3 class="skill-cat-title">
+            <span class="skill-cat-icon" aria-hidden="true">🔗</span> Networking &amp; APIs
+          </h3>
+          <div class="skill-tags" role="list">
+            <span class="skill-tag" role="listitem">REST APIs</span>
+            <span class="skill-tag" role="listitem">Dio</span>
+            <span class="skill-tag" role="listitem">JSON</span>
+            <span class="skill-tag" role="listitem">Twilio WhatsApp API</span>
+          </div>
+        </div>
+
+        <div class="skill-category reveal-item" id="skills-tools">
+          <h3 class="skill-cat-title">
+            <span class="skill-cat-icon" aria-hidden="true">🛠</span> Tools &amp; Analytics
+          </h3>
+          <div class="skill-tags" role="list">
+            <span class="skill-tag" role="listitem">Git</span>
+            <span class="skill-tag" role="listitem">Bitbucket Pipelines</span>
+            <span class="skill-tag" role="listitem">Figma</span>
+            <span class="skill-tag" role="listitem">Firebase Crashlytics</span>
+            <span class="skill-tag" role="listitem">MoEngage</span>
+            <span class="skill-tag" role="listitem">Mixpanel</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== EXPERIENCE ========== -->
+  <section id="experience" aria-label="Professional Experience">
+    <div class="container">
+      <div class="section-header reveal-item">
+        <span class="section-label mono">03 / experience</span>
+        <h2 class="section-title">Professional Experience</h2>
+      </div>
+      <div class="timeline" role="list">
+
+        <article class="timeline-item reveal-item" role="listitem" id="exp-beanorbit">
+          <div class="timeline-marker" aria-hidden="true">
+            <div class="marker-dot"></div>
+            <div class="marker-line"></div>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-meta">
+              <span class="timeline-period mono">02/2026 — Present</span>
+              <span class="timeline-badge current">Current</span>
+            </div>
+            <h3 class="timeline-role">Flutter Developer</h3>
+            <span class="timeline-company">BeanOrbit</span>
+            <p class="timeline-desc">
+              Architected and built the <strong>Zeuo platform</strong> from scratch using Supabase and Cubit,
+              integrating Twilio APIs via Edge Functions for real-time contractor workflows.
+            </p>
+            <div class="timeline-tags" role="list">
+              <span class="tl-tag" role="listitem">Supabase</span>
+              <span class="tl-tag" role="listitem">Cubit</span>
+              <span class="tl-tag" role="listitem">Twilio API</span>
+              <span class="tl-tag" role="listitem">Edge Functions</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="timeline-item reveal-item" role="listitem" id="exp-vectorstack">
+          <div class="timeline-marker" aria-hidden="true">
+            <div class="marker-dot"></div>
+            <div class="marker-line"></div>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-meta">
+              <span class="timeline-period mono">07/2025 — 02/2026</span>
+            </div>
+            <h3 class="timeline-role">Flutter Developer</h3>
+            <span class="timeline-company">Vector Stack</span>
+            <p class="timeline-desc">
+              Maintained multiple apps using <strong>Bloc</strong> and Clean Architecture. Integrated
+              <strong>Mixpanel</strong> for analytics and Firebase for Crashlytics &amp; Push Notifications.
+            </p>
+            <div class="timeline-tags" role="list">
+              <span class="tl-tag" role="listitem">Bloc</span>
+              <span class="tl-tag" role="listitem">Mixpanel</span>
+              <span class="tl-tag" role="listitem">Firebase Crashlytics</span>
+              <span class="tl-tag" role="listitem">Push Notifications</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="timeline-item reveal-item" role="listitem" id="exp-saaksan">
+          <div class="timeline-marker" aria-hidden="true">
+            <div class="marker-dot"></div>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-meta">
+              <span class="timeline-period mono">09/2022 — 07/2025</span>
+            </div>
+            <h3 class="timeline-role">Flutter Developer</h3>
+            <span class="timeline-company">Saaksan Technologies</span>
+            <p class="timeline-desc">
+              Developed rider and driver apps. Reduced app load time by <strong>50%</strong> and improved
+              overall performance by <strong>40%</strong> through core module refactoring and network
+              optimization.
+            </p>
+            <div class="timeline-tags" role="list">
+              <span class="tl-tag" role="listitem">Performance</span>
+              <span class="tl-tag" role="listitem">Google Maps</span>
+              <span class="tl-tag" role="listitem">Razorpay</span>
+              <span class="tl-tag" role="listitem">Real-time Tracking</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROJECTS ========== -->
+  <section id="projects" aria-label="Projects Portfolio">
+    <div class="container">
+      <div class="section-header reveal-item">
+        <span class="section-label mono">04 / projects</span>
+        <h2 class="section-title">Projects Portfolio</h2>
+      </div>
+      <div class="projects-masonry">
+
+        <article class="project-card project-card--featured reveal-item" id="proj-zeuo" aria-label="Zeuo App project">
+          <div class="project-inner">
+            <div class="project-visual" aria-hidden="true">
+              <div class="project-bg-pattern pattern-zeuo"></div>
+            </div>
+            <div class="project-overlay">
+              <div class="project-meta">
+                <span class="project-platform mono">Android &amp; iOS</span>
+                <span class="project-featured-badge">Featured</span>
+              </div>
+              <h3 class="project-name">Zeuo App</h3>
+              <p class="project-desc">
+                On-Demand Home Services Booking Platform with dual user flows, Supabase Auth, and
+                real-time Twilio WhatsApp integration.
+              </p>
+              <div class="project-tech" role="list">
+                <span class="proj-tag" role="listitem">Flutter</span>
+                <span class="proj-tag" role="listitem">Supabase</span>
+                <span class="proj-tag" role="listitem">Cubit</span>
+                <span class="proj-tag" role="listitem">Twilio</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal-item" id="proj-prk" aria-label="PRK App project">
+          <div class="project-inner">
+            <div class="project-visual" aria-hidden="true">
+              <div class="project-bg-pattern pattern-prk"></div>
+            </div>
+            <div class="project-overlay">
+              <div class="project-meta">
+                <span class="project-platform mono">Mobile</span>
+              </div>
+              <h3 class="project-name">PRK App</h3>
+              <p class="project-desc">
+                Celebrity-based Digital Engagement Application. Scalable architecture using Bloc for
+                state management.
+              </p>
+              <div class="project-tech" role="list">
+                <span class="proj-tag" role="listitem">Flutter</span>
+                <span class="proj-tag" role="listitem">Bloc</span>
+                <span class="proj-tag" role="listitem">Firebase</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal-item" id="proj-daiv" aria-label="Daiv App project">
+          <div class="project-inner">
+            <div class="project-visual" aria-hidden="true">
+              <div class="project-bg-pattern pattern-daiv"></div>
+            </div>
+            <div class="project-overlay">
+              <div class="project-meta">
+                <span class="project-platform mono">Mobile</span>
+              </div>
+              <h3 class="project-name">Daiv App</h3>
+              <p class="project-desc">
+                Temple Discovery &amp; Pooja Booking Platform. Slot-based booking system with heavy
+                dataset optimization.
+              </p>
+              <div class="project-tech" role="list">
+                <span class="proj-tag" role="listitem">Flutter</span>
+                <span class="proj-tag" role="listitem">Firestore</span>
+                <span class="proj-tag" role="listitem">Hive</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal-item" id="proj-viadots" aria-label="viaDots project">
+          <div class="project-inner">
+            <div class="project-visual" aria-hidden="true">
+              <div class="project-bg-pattern pattern-viadots"></div>
+            </div>
+            <div class="project-overlay">
+              <div class="project-meta">
+                <span class="project-platform mono">Rider &amp; Driver Apps</span>
+              </div>
+              <h3 class="project-name">viaDots</h3>
+              <p class="project-desc">
+                Ride-Hailing applications featuring real-time tracking, Google Maps integration,
+                and Razorpay payment flows.
+              </p>
+              <div class="project-tech" role="list">
+                <span class="proj-tag" role="listitem">Flutter</span>
+                <span class="proj-tag" role="listitem">Google Maps</span>
+                <span class="proj-tag" role="listitem">Razorpay</span>
+                <span class="proj-tag" role="listitem">WebSockets</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal-item" id="proj-cosmic" aria-label="Cosmic Collector project">
+          <div class="project-inner">
+            <div class="project-visual" aria-hidden="true">
+              <div class="project-bg-pattern pattern-cosmic"></div>
+            </div>
+            <div class="project-overlay">
+              <div class="project-meta">
+                <span class="project-platform mono">Game</span>
+              </div>
+              <h3 class="project-name">Cosmic Collector</h3>
+              <p class="project-desc">
+                Arcade Game built using the Flame Engine. Custom game loops, collision detection,
+                and progressive difficulty.
+              </p>
+              <div class="project-tech" role="list">
+                <span class="proj-tag" role="listitem">Flutter</span>
+                <span class="proj-tag" role="listitem">Flame Engine</span>
+                <span class="proj-tag" role="listitem">Game Dev</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section id="contact" aria-label="Contact">
+    <div class="container">
+      <div class="section-header reveal-item">
+        <span class="section-label mono">05 / contact</span>
+        <h2 class="section-title">Get In Touch</h2>
+      </div>
+      <div class="contact-grid">
+
+        <div class="contact-info reveal-item">
+          <p class="contact-tagline">
+            Have an interesting project or opportunity? I'd love to hear from you.
+          </p>
+          <div class="contact-details">
+            <a href="mailto:tomp6114@gmail.com" class="contact-detail-item" id="contact-email">
+              <span class="contact-icon" aria-hidden="true">✉</span>
+              <span>tomp6114@gmail.com</span>
+            </a>
+            <a href="tel:+919846949716" class="contact-detail-item" id="contact-phone">
+              <span class="contact-icon" aria-hidden="true">📞</span>
+              <span>+91 98469 49716</span>
+            </a>
+            <div class="contact-detail-item">
+              <span class="contact-icon" aria-hidden="true">📍</span>
+              <span>Bangalore, India</span>
+            </div>
+          </div>
+          <div class="social-links" role="list">
+            <a href="https://github.com/tomp6114" target="_blank" rel="noopener noreferrer" class="social-link" id="social-github" aria-label="GitHub Profile" role="listitem">
+              <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+              </svg>
+              GitHub
+            </a>
+            <a href="https://linkedin.com/in/tom-p-varghese" target="_blank" rel="noopener noreferrer" class="social-link" id="social-linkedin" aria-label="LinkedIn Profile" role="listitem">
+              <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+              </svg>
+              LinkedIn
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-form-wrap reveal-item">
+          <form class="contact-form" id="contact-form" novalidate aria-label="Contact form">
+            <div class="form-group">
+              <label for="form-name" class="form-label mono">Name</label>
+              <input type="text" id="form-name" name="name" class="form-input" placeholder="Your name" autocomplete="name" required aria-required="true" />
+              <span class="form-error" id="name-error" role="alert" aria-live="polite"></span>
+            </div>
+            <div class="form-group">
+              <label for="form-email" class="form-label mono">Email</label>
+              <input type="email" id="form-email" name="email" class="form-input" placeholder="your@email.com" autocomplete="email" required aria-required="true" />
+              <span class="form-error" id="email-error" role="alert" aria-live="polite"></span>
+            </div>
+            <div class="form-group">
+              <label for="form-message" class="form-label mono">Message</label>
+              <textarea id="form-message" name="message" class="form-input form-textarea" placeholder="Tell me about your project..." rows="5" required aria-required="true"></textarea>
+              <span class="form-error" id="message-error" role="alert" aria-live="polite"></span>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full" id="form-submit">
+              <span class="btn-text">Send Message</span>
+              <span class="btn-icon" aria-hidden="true">→</span>
+            </button>
+            <div class="form-success" id="form-success" role="status" aria-live="assertive" hidden>
+              <span class="success-icon" aria-hidden="true">✓</span>
+              Message sent! I'll get back to you soon.
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer id="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-inner">
+        <span class="footer-logo mono">&copy; 2026 Tom P Varghese</span>
+        <span class="footer-tagline mono">Built with ♥ in Bangalore</span>
+        <div class="footer-links">
+          <a href="https://github.com/tomp6114" target="_blank" rel="noopener noreferrer" aria-label="GitHub">GH</a>
+          <a href="https://linkedin.com/in/tom-p-varghese" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">LI</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
